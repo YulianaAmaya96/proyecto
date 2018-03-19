@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="lime lighten-1">
-    <div class="navbar-fixed">
+
       <nav class="lime lighten-1" role="navigation">
         <div class="nav-wrapper container">
           <a id="logo-container" href="index.html" class="white-text brand-logo">Finper</a>
@@ -19,74 +19,79 @@
             <li class="active"><a class="white-text" href="iniciarSesion.html">Iniciar sesión</a></li>
             <li><a class="white-text" href="sobreNosotros.html">Sobre nosotros</a></li>
           </ul>
-          <ul id="nav-mobile" class=" lime lighten-1 side-nav">
+          <ul id="nav-mobile" class="lime lighten-1 side-nav">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Registrarse.html">Registrarse</a></li>
             <li class="active"><a href="iniciarSesion.html">Iniciar sesión</a></li>
             <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="nav-mobile" class="white-text button-collapse"><i class="material-icons">menu</i></a>
         </div>
       </nav>
-    </div>
+
   </header>
 
   <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="media/fondo3.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="media/fondo3.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="media/fondo3.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="media/fondo3.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+      <ul class="slides">
+        <li>
+          <img src="media/fondo1.jpg">
+          <div class="caption center-align">
+            <h3>Educación financiera</h3>
+            <h5 class="light grey-text text-lighten-3">Aprenda de forma facil e conceptos básicos sobre finanzas</h5>
+          </div>
+        </li>
+        <li>
+          <img src="media/fondo2.jpg">
+          <div class="caption left-align">
+            <h3>Registro de sus deudas</h3>
+            <h5 class="light grey-text text-lighten-3">Esto le permite identidicar los puntos de quiebre y poder liquidarlas</h5>
+          </div>
+        </li>
+        <li>
+          <img src="media/fondo3.jpg">
+          <div class="caption right-align">
+            <h3>Defina su capacidad de ahorro</h3>
+            <h5 class="light grey-text text-lighten-3">Evalue los ingresos y egresos que posea, su capacidad de ingreso debe ser superior a sus egresos</h5>
+          </div>
+        </li>
+        <li>
+          <img src="media/fondo4.jpg">
+          <div class="caption center-align">
+            <h3>Defina prioridades y metas</h3>
+            <h5 class="light grey-text text-lighten-3">El primer paso para mejorar financieramente es tener objetivos claros, tener claro para que hago las cosas, como hago las cosas y cual va a ser la finalidad</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
 
   <div class="container">
     <div class="section">
-      <div class="row">
-        <div class="row">
-          <form class="col s12">
+      <div class="row ">
+        <div class="row z-depth-5">
 
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
+          <form id="login-form" class="col s12" action="javascript:;" method="post">
+            <div class="container ">
+              <br><br>
+                <div class="row">
+                  <div class="input-field col s12 ">
+                    <input id="email" name="email" type="email" class="validate" required="required">
+                    <label for="email">Correo electronico</label>
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="passw" name="passw" type="password" class="validate" required="required">
+                  <label for="passw">Contraseña</label>
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-              </div>
             </div>
-
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
-            </button>
+            <div class="row center-align">
+              <button class="btn lime lighten-1 waves-effect waves-light" type="submit" name="action">Registrarse
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
 
           </form>
         </div>
@@ -110,9 +115,9 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
   </body>
 </html>
